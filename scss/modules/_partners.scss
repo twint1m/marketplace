@@ -1,0 +1,25 @@
+.partners {
+    position: relative;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    justify-items: center;
+    &:not(:last-child) {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 107px));
+    }
+    &__icon {
+        width: 100%;
+    }
+    &__text {
+        &-center{
+            position: absolute;
+            justify-content: center;
+            justify-self: center;
+            white-space: nowrap;
+            font-size: 1.125rem;
+            color: #6f6f6f;
+            right: 35%;
+            bottom: -4rem;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: center;
+    gap: 204px;
+    padding: 15px 40px;
+    font-weight: 400;
+}
+
+.header {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    width: 100%;
+    font-size: 1.375rem;
+    transition: .35s all;
+    &:hover{  
+      text-decoration: underline;
+      transition: .35s all;
+    }
+  }
+  &__button {
+    font-size: 1.25rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 8px 32px;
+    transition: .35s all;
+    &:hover {
+        background: #fff;
+        color: #000;
+        transition: .35s all; 
+    }
+  }
+}

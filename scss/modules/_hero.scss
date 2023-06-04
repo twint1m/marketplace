@@ -1,0 +1,57 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-areas:
+    "commerce img"
+    "headline img"
+    "slogan img"
+    "link img";
+
+  &__title {
+  }
+
+  &__commerce {
+    grid-area: commerce;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+    font-size: 0.813rem;
+    align-self: end;
+    margin-bottom: 1rem;
+  }
+
+  &__headline {
+    grid-area: headline;
+    font-size: 3.125rem;
+    letter-spacing: 0.008rem;
+  }
+
+  &__slogan {
+    grid-area: slogan;
+    font-size: 1.25rem;
+    padding-right: 8rem;
+    align-self: center;
+  }
+
+  &__link {
+    width: 11.75rem;
+    height: 2.75rem;
+    grid-area: link;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    background: #fff;
+    border-radius: 2.5rem;
+    transition: all .35s;
+    &:hover {
+        background: #000;
+        color: #fff;
+        transition: all .35s;
+        border: 1px solid #fff;
+    }
+  }
+  &__img {
+    grid-area: img;
+  }
+}

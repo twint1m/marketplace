@@ -1,0 +1,23 @@
+* {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    box-sizing: border-box;
+    letter-spacing: 0.008rem;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.visualy-hidden {
+    position: absolute;
+    left: -200vh;
+}
+
+img {
+    object-fit:contain  ;
+    width: 100%;
+    height: 100%;
+}
